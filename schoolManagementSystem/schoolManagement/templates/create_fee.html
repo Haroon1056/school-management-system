@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Add Fee</title>
+    </head>
+    <body>
+        <h1>Add Fee</h1>
+        <form method="POST" action="add_fee">
+            {% csrf_token %}
+            <label>Student:</label> 
+            <div> {{form.student}} </div>
+            <label>Amount:</label> 
+            <div> {{form.amount}} </div>
+            <label>Payment Date:</label> 
+            <div> {{form.payment_date}} </div>
+            <div>
+                <button type = "submit" class="btn btn-info">Save</button>
+            </div>
+        </form>
+    </body>
+</html>

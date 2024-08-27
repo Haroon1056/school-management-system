@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Add Result</title>
+    </head>
+    <body>
+        <h1>Add Result</h1>
+        <form method="POST" action="add_result">
+            {% csrf_token %}
+            <label>Student:</label> 
+            <div> {{form.student}} </div>
+            <label>Subject:</label> 
+            <div> {{form.subject}} </div>
+            <label>Marks:</label> 
+            <div> {{form.marks}} </div>
+            <label>Exam Date:</label> 
+            <div> {{form.exam_date}} </div>
+            <div>
+                <button type = "submit" class="btn btn-info">Save</button>
+            </div>
+        </form>
+    </body>
+</html>

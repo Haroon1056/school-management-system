@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Edit Student</title>
+    </head>
+    <body>
+        <h1>Edit Student</h1>
+        <form method = "POST" action = "/update_student/{{ students.id }}">
+            {% csrf_token %}
+            <table>
+                <tr>
+                    <td><input name="first_name" required value="{{students.first_name}}"></td>
+                </tr>
+                <tr>
+                    <td><input name="last_name" required value="{{students.last_name}}"></td>
+                </tr>
+                <tr>
+                    <td><input name="date_of_birth" required value="{{students.date_of_birth}}"></td>
+                </tr>
+                <tr>
+                    <td><input name="class_name" required value="{{students.class_name}}"></td>
+                </tr>
+                <tr>
+                    <td><input name="admission_date" required value="{{students.admission_date}}"></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">update</button></td>
+                </tr>
+            </table>
+            
+        </form>
+    </body>
+</html>
