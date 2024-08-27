@@ -36,12 +36,14 @@ This is a School Management System built using Django, Python's powerful web fra
    cd schoolManagement
    
 2. **Apply migrations**:
-   ```python manage.py migrate```
+   ```bash
+   python manage.py migrate
 
-4. Run the development server:
-  ```python manage.py runserver```
+4. **Run the development server**:
+   ```bash
+    python manage.py runserver
   
-5. Access the system: Open http://127.0.0.1:8000/ in your web browser.
+6. **Access the system:** Open http://127.0.0.1:8000/ in your web browser.
 
 ## Usage
 - Use the search functionality to quickly find specific student records.
